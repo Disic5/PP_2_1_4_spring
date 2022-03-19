@@ -1,7 +1,10 @@
 package koschei.config;
 
+import koschei.models.Box;
 import koschei.models.Island2;
+import koschei.models.Rabbit4;
 import koschei.models.Wood3;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -14,4 +17,6 @@ public class AppConfig {
     public static Island2 getIsland(Wood3 wood) {
         return new Island2(wood);
     }
+
+
 }
